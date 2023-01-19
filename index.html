@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script>
+      // Función para iniciar los temporizadores
+      function startTimers() {
+        // Temporizador para DI
+        var diTimer = setInterval(function() {
+          var diDate = new Date("February 14, 2023 15:00:00");
+          var currentTime = new Date();
+          var diff = diDate - currentTime;
+          var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById("di-timer").innerHTML ="Diseño de interfaces <br><br>" + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    }, 1000);
+
+    // Temporizador para EIE
+    var eieTimer = setInterval(function() {
+      var eieDate = new Date("February 17, 2023 15:00:00");
+      var currentTime = new Date();
+      var diff = eieDate - currentTime;
+
+      var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById("eie-timer").innerHTML ="Empresa e iniciativa Emprendedora <br><br>" + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    }, 1000);
+
+    // Temporizador para Multimedia
+    var multimediaTimer = setInterval(function() {
+      var multimediaDate = new Date("February 17, 2023 17:00:00");
+      var currentTime = new Date();
+      var diff = multimediaDate - currentTime;
+
+      var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById("multimedia-timer").innerHTML ="Programacion Multimedia <br><br>" + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    }, 1000);
+
+    // Temporizador para PSP
+    var pspTimer = setInterval(function() {
+      var pspDate = new Date("February 21, 2023 16:00:00");
+      var currentTime = new Date();
+      var diff = pspDate - currentTime;
+
+      var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+document.getElementById("psp-timer").innerHTML = "Programacion de procesos y servicios <br><br>" + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    }, 1000);
+
+    // Temporizador para SGE
+    var sgeTimer = setInterval(function() {
+      var sgeDate = new Date("February 21, 2023 18:30:00");
+      var currentTime = new Date();
+      var diff = sgeDate - currentTime;
+
+      var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById("sge-timer").innerHTML ="Sistemas de Gestion Empresarial <br><br>" +  days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    }, 1000);
+
+    // Temporizador para AD
+    var adTimer = setInterval(function() {
+      var adDate = new Date("February 24, 2023 16:00:00");
+      var currentTime = new Date();
+      var diff = adDate - currentTime;
+
+      var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById("ad-timer").innerHTML ="Acceso a Datos <br><br>" + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    }, 1000);
+  }
+</script>
+
+</head>
+<body onload="startTimers()">
+  <div id="di-timer">
+    <h1>DI</h1>
+  </div>
+  <div id="eie-timer">
+    <h1>EIE</h1>
+  </div>
+  <div id="multimedia-timer">
+    <h1>Multimedia</h1>
+  </div>
+  <div id="psp-timer">
+    <h1>PSP</h1>
+  </div>
+  <div id="sge-timer">
+    <h1>SGE</h1>
+  </div>
+  <div id="ad-timer">
+    <h1>AD</h1>
+  </div>
+</body>
+</html>
+
+    

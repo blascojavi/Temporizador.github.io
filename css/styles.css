@@ -1,0 +1,42 @@
+body {
+    background-color: #f2f2f2;
+    }
+    
+    #di-timer, #eie-timer, #multimedia-timer, #psp-timer, #sge-timer, #ad-timer {
+    display: inline-block;
+    width: 30%;
+    background-color: #87ceeb;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    }
+    
+    #di-timer h1, #eie-timer h1, #multimedia-timer h1, #psp-timer h1, #sge-timer h1, #ad-timer h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+    }
+    
+    #di-timer {
+    background-color: #87ceeb;
+    }
+    
+    #eie-timer {
+    background-color: #ffb6c1;
+    }
+    
+    #multimedia-timer {
+    background-color: #98fb98;
+    }
+    
+    #psp-timer {
+    background-color: #ffa07a;
+    }
+    
+    #sge-timer {
+    background-color: #ffd700;
+    }
+    
+    #ad-timer {
+    background-color: #87cefa;
+    }
